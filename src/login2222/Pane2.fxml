@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="login2222.Pane2Controller">
+    <stylesheets>
+        <URL value="@pane2.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="107.0" layoutY="37.0" prefHeight="284.0" prefWidth="386.0" text="your Secret is here ">
+         <font>
+            <Font name="System Bold" size="43.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

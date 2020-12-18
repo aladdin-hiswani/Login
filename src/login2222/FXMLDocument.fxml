@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="515.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login2222.FXMLDocumentController">
+   <children>
+      <HBox prefHeight="69.0" prefWidth="515.0" style="-fx-border-color: #48dbfb; -fx-border-width: 3;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <Button fx:id="log" mnemonicParsing="false" onAction="#loginPane" onDragDetected="#loginPane" prefHeight="45.0" prefWidth="220.0" style="-fx-background-color: #48dbfb;" text="Login">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="signUp" mnemonicParsing="false" onAction="#signUpPane" onDragDetected="#signUpPane" prefHeight="45.0" prefWidth="220.0" style="-fx-background-color: #1dd1a1;" text="Sign up">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <AnchorPane fx:id="LogPane" layoutX="-2.0" layoutY="79.0" prefHeight="321.0" prefWidth="515.0" visible="false">
+         <children>
+            <TextField fx:id="logTxt" layoutX="14.0" layoutY="125.0" prefHeight="43.0" prefWidth="302.0" promptText="Username" />
+            <PasswordField fx:id="logPass" layoutX="15.0" layoutY="193.0" prefHeight="43.0" prefWidth="302.0" promptText="Password" />
+            <ComboBox fx:id="LogChose" layoutX="14.0" layoutY="23.0" prefWidth="150.0" promptText="Chose Type" />
+            <Button fx:id="LogBtn" layoutX="69.0" layoutY="250.0" mnemonicParsing="false" onAction="#login" prefHeight="57.0" prefWidth="377.0" style="-fx-background-color: #48dbfb;" text="Login">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="signUpPane" layoutY="79.0" prefHeight="321.0" prefWidth="515.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <ComboBox fx:id="signChose" layoutX="262.0" layoutY="26.0" prefHeight="43.0" prefWidth="220.0" promptText="Chose Type" />
+            <TextField fx:id="signUser" layoutX="258.0" layoutY="87.0" prefHeight="43.0" prefWidth="220.0" promptText="Username" />
+            <TextField fx:id="signPass" layoutX="258.0" layoutY="139.0" prefHeight="43.0" prefWidth="220.0" promptText="Password" />
+            <TextField fx:id="signEmail" layoutX="258.0" layoutY="190.0" prefHeight="43.0" prefWidth="220.0" promptText="Your Email" />
+            <Button fx:id="SignUpBtn" layoutX="70.0" layoutY="250.0" mnemonicParsing="false" onAction="#add_users" prefHeight="57.0" prefWidth="377.0" style="-fx-background-color: #1dd1a1;" text="sign up">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="img" fitHeight="150.0" fitWidth="150.0" layoutX="51.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@user.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
